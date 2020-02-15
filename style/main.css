@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Clicker Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:300|Ubuntu:300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+ text-decoration: none;
+}
+
+.preload{
+  
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #000000;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 3;
+transition: opacity 0.9s ease;
+}
+
+.preload img{
+  background-color: #fff;
+  border: 10px solid #fff;
+  border-radius: 4px;
+  height: 200px;
+  width: auto;
+}
+
+.preload h3{
+font-size: 12px;
+position: absolute;
+top: 58%;
+transform: translateY(-75%);
+}
+
+.preload-finish{
+opacity: 0;
+pointer-events: none;
+}
+
+
+/*-------X--------PRELOADER--------X----------*/
+
+
+.container_btn .button2{
+  font-family:  Ubuntu;
+  position: absolute;
+  bottom: 20px;
+  left: 160px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  padding: 10px 27px;
+  cursor: pointer;
+
+}
+
+.container_btn2 .button3{
+  font-family: Ubuntu;
+  position: absolute;
+  top: 400px;
+  left: 1050px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  font-size: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+
+}
+ 
+.button3{
+  
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  
+}
+.button3:hover {
+  background-color: Black;
+  color: white;
+}
+
+  
+  
+.button2{
+
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  
+
+  
+}
+.button2:hover {
+background-color: transparent;
+  color: black;
+}
+
+
+.container_btn3 .button4{
+  font-family: Lato;
+ position: absolute;
+  top: 540px;
+  left: 180px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+  padding: 12px 24px;
+  cursor: pointer;
+
+}
+
+.button4{
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  
+}
+.button4:hover {
+  background-color: Black;
+  color: white;
+  border: 1px solid black;
+}
+
+
+.container_btn4 .button5{
+  font-family:  Ubuntu;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.button5{
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+  top:1300px;
+  left: 350px;
+  
+}
+.button5:hover {
+  background-color: Black;
+  color: white;
+  border: 1px solid black;
+}
+
+.container_btn5 .button6{
+  font-family:  Ubuntu;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color:white;
+  font-size: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+}
+
+.button6{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  top:1300px;
+  left: 350px;
+  
+}
+.button6:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+body{
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 550px;
+}
+
+
+.contentfront {
+  background-color: black;
+  padding: 10px;
+  height: 900px; 
+}
+
+.content-page {
+  background-color: black;
+  padding: 10px;
+  height: 198px; 
+  
+}
+.navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    background: #333333;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s ease 0s;
+}
+
+.menu li a:hover{
+    background: black;
+    color: goldenrod;
+}
+
+.menu li a:active {
+  background-color:gray;
+  color: #ffd700;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.deal-container{
+    height: 75vh;
+    width: 100%;
+    //background-color: goldenrod;
+}
+
+.img1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+ 
+ 
+ 
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding-top: 12px;
+  padding-bottom: 9px;
+  font-family: 'Quicksand', sans-serif;
+  background: black;
+  position: inherit;
+  text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%;
+    
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s ease 0s;
+}
+
+.topnav a:hover {
+   background: black;
+   color: white;
+   display: block;
+}
+
+.topnav a:active {
+  background-color:black;
+  color: goldenrod;
+}
+
+
+{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+
+/* SIDE NAV */
+.sidenav {
+  display: table-cell;
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  white-space: nowrap;
+}
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#Main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.sidenav h3{
+  font-size: 18px;
+  padding: 1px 0;
+  line-height: 22px;
+}
+
+.sidenav p{
+  padding: 15px 10px;
+  color: #fff;
+  background-color: #00000010;
+  font-size: 18px;
+  
+  border-bottom: 1px solid #00000020;
+}
+
+  
+.sidenav .textfield{
+  width: 90%;
+  height: 30px;
+  margin-left: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #00000040;
+  font-size: 16px;
+}
+
+.sidenav .applycode-button{
+  cursor: pointer;
+  width: 50%;
+  margin-left: 60px;
+  height: 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  background-color: #ff980050;
+}
+
+.sidenav .applycode-button:hover{
+  background-color: goldenrod;
+  transition: .6s;
+}
+.sidenav .checkout-button{
+  cursor: pointer;
+  width: 50%;
+  margin-left: 40px;
+  height: 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  background-color: #ff980050;
+}
+
+.sidenav .checkout-button:hover{
+  background-color: goldenrod;
+  transition: .6s;
+}
+
+.sidenav img{
+  margin-left: 22px;
+  height: 200px;
+  width: 200px;
+}
+/* END SIDE NAV */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1420px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 70%; 
+  overflow: hidden;
+}
+
+/* Caption text */
+.text1 {
+  font-family: Lato, sans-serif;
+  color: black;
+  font-size: 200%;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  text-align: left;
+  left: 10px;
+  
+}
+
+.text2 {
+  font-family: Ubuntu, sans-serif;
+  color: White;
+  font-size: 300%;
+  padding: 18px 12px;
+  position: absolute;
+  bottom: 300px;
+  width: 100%;
+  left: 735px;
+  text-shadow: 2px 2px 5px Black;
+}
+
+.text3 {
+  font-family: 'Quicksand', sans-serif;
+  color: White;
+  font-size: 200%;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  left: 30px;
+  text-align: left;
+  text-shadow: 2px 2px 5px Black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 240px;
+  left: 850px;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.column {
+  float:left;
+  width: 33%;
+  padding:20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+            
+
+.label{
+  font-family:Tajawal;
+  font-size:150%;
+  
+}
+
+h3{
+  font-family: Open Sans;
+  line-height: 1.5;
+  font-size: 15px;
+  color: black;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+h4{
+  font-family:Open Sans;
+  font-size: 13px;
+  color: black;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 1000px; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  /* min-height: 50%; */
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: 1000px;
+
+  /* Center the video */
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.text-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text-page{
+  font-family: Roboto;
+  font-size: 300%;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 100px;
+  left: 80px;
+  color:white;
+}
+.small-text{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 85px;
+  left: 80px;
+  color:white;
+}
+
+.text-page-watches{
+  font-family: Roboto;
+  font-size: 300%;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 300px;
+  left: 1000px;
+  color:black;
+}
+.small-text-watches{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 285px;
+  left: 1010px;
+  color:black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: Black;
+  color: white;
+  font-size: 16px;
+  padding: 20px 32px;
+  font-family: Open Sans;
+}
+
+.img-holiday{
+ float:left;
+ width: 200px;
+ height: 500px;
+ padding-top: 15px;
+ padding-left:15px;
+ margin-right:15px;
+}
+
+p{
+  font-family: Lato;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+  
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 300px;
+}
+
+.text-footer
+{
+  font-family: Open Sans;
+  font-size: 30px;
+  text-align: center;
+  top: 20px;
+  
+}
+
+.p2{
+  font-family: Ubuntu;
+  color: black;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 20px;
+  
+}
+
+.content2 {
+  background-color: #ddd;
+  padding: 10px;
+  height: 500px;
+}
+
+.p3{
+  font-family: Ubuntu;
+  color: black;
+  font-size: 20px;
+  padding-right:15px;
+
+ 
+  
+}
+
+
+/*--search--*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+.openBtn {
+  background: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  color: white;
+  font-family: 'Quicksand';
+}
+
+.openBtn:hover {
+  background: black;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
